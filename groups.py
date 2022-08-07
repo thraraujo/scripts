@@ -6,23 +6,26 @@ import random, math # Inicialmente importamos os dois modulos
 # O número de estudantes é o comprimento da lista definida
 # pelo método .readlines()
 
+"""
+# I can replace all this block code with the with statement
 file = open("estudantes.txt")
 
 estudantes_lista = file.readlines()
 quantidade_estudantes = len(estudantes_lista)
+
+file.close()
+"""
+
+with open("estudantes.txt") as file:
+    estudantes_lista = file.readlines()
+    quantidade_estudantes = len(estudantes_lista)
+
 
 assuntos = int(input("Quantos assuntos serão apresentados? \n => "))
 
 minimo_estudantes_grupo = math.floor(quantidade_estudantes / assuntos)
 excedente_estudantes = quantidade_estudantes % minimo_estudantes_grupo
 
-if excedente_estudantes == 0:
-    print(f'''Temos {quantidade_estudantes} estudantes divididos em
-        => {assuntos - excedente_estudantes} grupos com {minimo_estudantes_grupo} estudantes''')
-else:
-    print(f'''Temos {quantidade_estudantes} divididos em
-        => {assuntos - excedente_estudantes} grupos com {minimo_estudantes_grupo} estudantes
-        => {excedente_estudantes} grupos com {minimo_estudantes_grupo + 1} estudantes\n''')
 
 # Agora criaremos um conjunto de listas (set) vazias igual ao número de assuntos
 # nas quais adicionaremos os estudantes.
@@ -46,9 +49,28 @@ while len(ordem_estudantes) > 0:
         else:
             break
 
-# Com os grupos formados, agora podemos apresentar quem são os estudantes
-for n in range(assuntos):
-    print(f"\n# Grupo {n + 1}:")
-    conjunto_grupos[n].sort()
-    for m in range(len(conjunto_grupos[n])):
-        print(f"{conjunto_grupos[n][m] + 1} :: {estudantes_lista[conjunto_grupos[n][m]][:-1]}")
+# Com os grupos formados, agora podemos exportar os grupos
+with open("grupos.txt", "w") as file:
+
+    if excedente_estudantes == 0:
+        file.write(f'''Temos {quantidade_estudantes} estudantes divididos em:
+            => {assuntos - excedente_estudantes} grupos com {minimo_estudantes_grupo} estudantes''')
+    else:
+        file.write(f'''Temos {quantidade_estudantes} estudantes divididos em:
+            => {assuntos - excedente_estudantes} grupos com {minimo_estudantes_grupo} estudantes
+            => {excedente_estudantes} grupos com {minimo_estudantes_grupo + 1} estudantes\n''')
+
+    for n in range(assuntos):
+        #print(f"\n # Grupo {n + 1}:")
+        file.write(f"\n # Grupo {n + 1} :: {len(conjunto_grupos[n])} estudantes\n")
+        conjunto_grupos[n].sort()
+        for m in range(len(conjunto_grupos[n])):
+            #print(f"{conjunto_grupos[n][m] + 1} :: {estudantes_lista[conjunto_grupos[n][m]][:-1]}")
+            # The conditionals below is just to allign the tables
+            if conjunto_grupos[n][m] < 9:
+                file.write(f"0{conjunto_grupos[n][m] + 1} :: {estudantes_lista[conjunto_grupos[n][m]]}")
+            else:
+                file.write(f"{conjunto_grupos[n][m] + 1} :: {estudantes_lista[conjunto_grupos[n][m]]}")
+
+
+print("Grupos criados!")
