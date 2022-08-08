@@ -66,7 +66,7 @@ with open("grupos.txt", "w") as file:
         conjunto_grupos[n].sort()
         for m in range(len(conjunto_grupos[n])):
             #print(f"{conjunto_grupos[n][m] + 1} :: {estudantes_lista[conjunto_grupos[n][m]][:-1]}")
-            # The conditionals below is just to allign the tables
+            # Os condicionais abaixo ajudam a alinhas a tabela
             if conjunto_grupos[n][m] < 9:
                 file.write(f"0{conjunto_grupos[n][m] + 1} :: {estudantes_lista[conjunto_grupos[n][m]]}")
             else:
