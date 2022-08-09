@@ -6,26 +6,18 @@ import random, math # Inicialmente importamos os dois modulos
 # O número de estudantes é o comprimento da lista definida
 # pelo método .readlines()
 
-"""
-# I can replace all this block code with the with statement
-file = open("estudantes.txt")
-
-estudantes_lista = file.readlines()
-quantidade_estudantes = len(estudantes_lista)
-
-file.close()
-"""
-
 with open("estudantes.txt") as file:
     estudantes_lista = file.readlines()
     quantidade_estudantes = len(estudantes_lista)
 
+# Vamos agora criar a lista de tópicos a serem apresentados
+with open("topicos.txt") as file:
+    topicos_lista = file.readlines()
+    assuntos = len(topicos_lista)
 
-assuntos = int(input("Quantos assuntos serão apresentados? \n => "))
 
 minimo_estudantes_grupo = math.floor(quantidade_estudantes / assuntos)
 excedente_estudantes = quantidade_estudantes % minimo_estudantes_grupo
-
 
 # Agora criaremos um conjunto de listas (set) vazias igual ao número de assuntos
 # nas quais adicionaremos os estudantes.
@@ -39,8 +31,9 @@ ordem_estudantes = list(range(quantidade_estudantes))
 # Considero esse shuffle apenas para maximizar a 'entropia'
 for n in range(quantidade_estudantes):
     random.shuffle(ordem_estudantes)
+    random.shuffle(topicos_lista)
 
-
+# Finalmente, podemos criar os nossos grupos
 while len(ordem_estudantes) > 0:
     for n in range(assuntos):
         random.shuffle(ordem_estudantes)
@@ -54,15 +47,15 @@ with open("grupos.txt", "w") as file:
 
     if excedente_estudantes == 0:
         file.write(f'''Temos {quantidade_estudantes} estudantes divididos em:
-            => {assuntos - excedente_estudantes} grupos com {minimo_estudantes_grupo} estudantes''')
+        => {assuntos - excedente_estudantes} grupos com {minimo_estudantes_grupo} estudantes''')
     else:
         file.write(f'''Temos {quantidade_estudantes} estudantes divididos em:
-            => {assuntos - excedente_estudantes} grupos com {minimo_estudantes_grupo} estudantes
-            => {excedente_estudantes} grupos com {minimo_estudantes_grupo + 1} estudantes\n''')
+        => {assuntos - excedente_estudantes} grupos com {minimo_estudantes_grupo} estudantes
+        => {excedente_estudantes} grupos com {minimo_estudantes_grupo + 1} estudantes\n''')
 
     for n in range(assuntos):
         #print(f"\n # Grupo {n + 1}:")
-        file.write(f"\n # Grupo {n + 1} :: {len(conjunto_grupos[n])} estudantes\n")
+        file.write(f"\n # Grupo {n + 1} :: {len(conjunto_grupos[n])} estudantes :: {topicos_lista[n]} ")
         conjunto_grupos[n].sort()
         for m in range(len(conjunto_grupos[n])):
             #print(f"{conjunto_grupos[n][m] + 1} :: {estudantes_lista[conjunto_grupos[n][m]][:-1]}")
