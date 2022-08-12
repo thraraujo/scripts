@@ -2,16 +2,28 @@
 #
 import random, math # Inicialmente importamos os dois modulos
 
+answer = int(input("""Qual para qual curso devemos criar grupos?
+    1. Matemática
+    2. Química
+    3. Zootecnia
+    > """ ))
+
+cases = ["matematica", "quimica", "zootecnia"]
+
+estudantes = f"{answer}_estudantes_{cases[answer - 1]}.txt"
+topicos = f"{answer}_topicos_{cases[answer - 1]}.txt"
+
+
 # Agora iremos ler a lista com o nome dos estudantes.
 # O número de estudantes é o comprimento da lista definida
 # pelo método .readlines()
 
-with open("estudantes.txt") as file:
+with open(estudantes) as file:
     estudantes_lista = file.readlines()
     quantidade_estudantes = len(estudantes_lista)
 
 # Vamos agora criar a lista de tópicos a serem apresentados
-with open("topicos.txt") as file:
+with open(topicos) as file:
     topicos_lista = file.readlines()
     assuntos = len(topicos_lista)
 
@@ -43,7 +55,10 @@ while len(ordem_estudantes) > 0:
             break
 
 # Com os grupos formados, agora podemos exportar os grupos
-with open("grupos.txt", "w") as file:
+
+grupos = f"{answer}_grupos_{cases[answer - 1]}.txt"
+
+with open(grupos, "w") as file:
 
     if excedente_estudantes == 0:
         file.write(f'''Temos {quantidade_estudantes} estudantes divididos em:
@@ -55,11 +70,12 @@ with open("grupos.txt", "w") as file:
 
     for n in range(assuntos):
         #print(f"\n # Grupo {n + 1}:")
-        file.write(f"\n # Grupo {n + 1} :: {len(conjunto_grupos[n])} estudantes :: {topicos_lista[n]} ")
+        file.write(f"\n # Grupo {n + 1} :: {len(conjunto_grupos[n])} estudantes :: {topicos_lista[n]}")
         conjunto_grupos[n].sort()
+
         for m in range(len(conjunto_grupos[n])):
             #print(f"{conjunto_grupos[n][m] + 1} :: {estudantes_lista[conjunto_grupos[n][m]][:-1]}")
-            # Os condicionais abaixo ajudam a alinhas a tabela
+            # Os condicionais abaixo ajudam a alinhar a tabela
             if conjunto_grupos[n][m] < 9:
                 file.write(f"0{conjunto_grupos[n][m] + 1} :: {estudantes_lista[conjunto_grupos[n][m]]}")
             else:
