@@ -5,10 +5,11 @@ import random, math # Inicialmente importamos os dois modulos
 answer = int(input("""Qual para qual curso devemos criar grupos?
     1. Matemática
     2. Química
-    3. Zootecnia
+    3. Agronomia
+    4. Zootecnia
     > """ ))
 
-cases = ["matematica", "quimica", "zootecnia"]
+cases = ["matematica", "quimica", "agronomia", "zootecnia"]
 
 estudantes = f"{answer}_estudantes_{cases[answer - 1]}.txt"
 topicos = f"{answer}_topicos_{cases[answer - 1]}.txt"
