@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import random
 
-
 Jogo = [set([]),set([])]
 
 i = 0
