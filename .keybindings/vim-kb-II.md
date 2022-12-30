@@ -1,8 +1,8 @@
-# Vim Cheatsheet: Beyond the Basics 
+# Vim Cheatsheet: Beyond the Basics
 
-## Registers 
+## Registers
 
-When we delete something with vim, the previous 9 deletions are saved in an unnamed register. 
+When we delete something with vim, the previous 9 deletions are saved in an unnamed register.
 We can access these registers with numbers from 1 to 9. For example:
 
 ```
@@ -10,8 +10,8 @@ We can access these registers with numbers from 1 to 9. For example:
 "np                         Paste the register n, where n runs from 1 to 9, after the cursor
 ```
 
-On the other hand, one can use named registers. Vim has 26 of them: The letters from a to z. 
-For example, using the register t, we have 
+On the other hand, one can use named registers. Vim has 26 of them: The letters from a to z.
+For example, using the register t, we have
 
 ```
 "tyy                        Yank the current line to the register labeled by t
@@ -20,7 +20,7 @@ For example, using the register t, we have
 "tp                         Paste the content of the register t after the cursor
 ```
 
-One can also delete and save the deletion to a register as 
+One can also delete and save the deletion to a register as
 
 ```
 "tdd                        Delete the line and save the content to the registered t
@@ -35,7 +35,7 @@ m a                         Mark current position with a.
 ```
 
 _a_ can be any letter, and vim distinguishes uppercases and lowercases.
-One can move to the marked positions with 
+One can move to the marked positions with
 
 ```
 'a                          Move cursor to the line marked with a 
@@ -44,10 +44,18 @@ One can move to the marked positions with
 ''                          Return to the beginning of the line of the previous mark or context
 ```
 
+## Folding
+
+```
+zfnj                        Create folding to the nj position. We can mark a position with the previous command
+zo                          Open folding
+zc                          Close folding
+```
+
 ## The Ex editor
 
-The ex editor is behind the curtains of vim, so it might be useful to learn one or two things 
-about it. First, when we use the colons ':', we are using the ex editor. So, it is an _line_ 
+The ex editor is behind the curtains of vim, so it might be useful to learn one or two things
+about it. First, when we use the colons ':', we are using the ex editor. So, it is an _line_
 editor. Some important commands are the following:
 
 ```
@@ -69,27 +77,27 @@ Symbols with special meanings
 :#                          Print the current line with the number
 ```
 
-Other useful commands are 
+Other useful commands are
 
-``` 
+```
 :=                          Print the total number of lines in the document 
 :.=                         Print the number of the current line
 ```
 
-It is important to notice that we have some special symbols. For example, we already know that 
-$ means the end of the final line, and 0 means the beginning of the current line. But in the ex 
-command, these symbols mean different things. For example 
+It is important to notice that we have some special symbols. For example, we already know that
+$ means the end of the final line, and 0 means the beginning of the current line. But in the ex
+command, these symbols mean different things. For example
 
-``` 
+```
 :0                          Cursos goes to the beginning of the document. It is equivalent to gg
 :$                          Cursos goes to the end of the document. It is equivalent to G 
 ```
 
-So, we can combine these symbols with commands. For example, one can delete the current line, 
-through the end of the document with _:.,$d_ 
+So, we can combine these symbols with commands. For example, one can delete the current line,
+through the end of the document with _:.,$d_
 
-We already know how to make searches with vim, but ex also has a global search pattern. That means 
-that we can search for a pattern and the editor shows all lines that contain the searched pattern. 
+We already know how to make searches with vim, but ex also has a global search pattern. That means
+that we can search for a pattern and the editor shows all lines that contain the searched pattern.
 
 ```
 :g/pattern                  Shows all the lines that contain the pattern
@@ -98,7 +106,7 @@ that we can search for a pattern and the editor shows all lines that contain the
 
 ## Working with multiple files
 
-We have already seen how to open more than one file, but we have not explored this possibility yet. 
+We have already seen how to open more than one file, but we have not explored this possibility yet.
 
 ```
 vim <file1> <file2>         Open file1 and file2
@@ -110,7 +118,7 @@ vim <file1> <file2>         Open file1 and file2
 
 ## Global replacement
 
-Now, we would like to search and replace patterns. 
+Now, we would like to search and replace patterns.
 
 ```
 :s/old/new                  This is the search command. It changes the first occurrence. 
@@ -119,5 +127,5 @@ Now, we would like to search and replace patterns.
 ```
 
 Sometimes we want to search for patterns with special characters. For example, dots, question marks
-and slashes. We can avoid these symbols with another slash. For example \\ means \. This is 
+and slashes. We can avoid these symbols with another slash. For example \\ means \. This is
 particularly convenient when we are writing LaTeX documents.
