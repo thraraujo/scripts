@@ -1,55 +1,41 @@
----------------------
+1. GENERAL KEYMAPS
 
--- General Keymaps
----------------------
+<leader> is the space
 
--- use jk to exit insert mode
-keymap.set("i", "jk", "<ESC>")
+-- jk: = <ESC> exit insert mode <ESC>
 
--- clear search highlights
-keymap.set("n", "<leader>nh", ":nohl<CR>")
+-- x: delete single character without copying into register
 
--- delete single character without copying into register
-keymap.set("n", "x", '"_x')
+-- <leader>nh: clear search highlights
 
--- increment/decrement numbers
-keymap.set("n", "<leader>+", "<C-a>") -- increment
-keymap.set("n", "<leader>-", "<C-x>") -- decrement
+-- <leader>+: increase numbers
+-- <leader>-: decrease numbers
 
--- window management
-keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
-keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
-keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
-keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
+-- <leader>sv: = <C-w>v split window vertically
+-- <leader>sh: = <C-w>s split window horizontally
+-- <leader>se: = <C-w>= make split windows equal width & heigh
+-- <leader>sx: close current split
 
-keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
-keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
-keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
-keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
+-- <leader>to: open new tab
+-- <leader>tx: close current tab
+-- <leader>tn: go to next tab
+-- <leader>tp: go to previous tab
 
-----------------------
+2. PLUGIN KEYBINDS
 
--- Plugin Keybinds
-----------------------
+-- <leader>sm: toggle split window maximization
 
--- vim-maximizer
-keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>") -- toggle split window maximization
+-- <leader>e: toggle file explorer
 
--- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- toggle file explorer
+-- <leader>ff: find files within current working directory, respects .gitignore
+-- <leader>fs: find string in current working directory as you type
+-- <leader>fc: find string under cursor in current working directory
+-- <leader>fb: list open buffers in current neovim instance
+-- <leader>fh: list available help tags
 
--- telescope
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
-keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
-keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
-keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
-keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+-- <leader>gc:  list all git commits (use <cr> to checkout) ["gc" for git commits]
+-- <leader>gfc: list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
+-- <leader>gb:  list git branches (use <cr> to checkout) ["gb" for git branch]
+-- <leader>gs:  list current changes per file with diff preview ["gs" for git status]
 
--- telescope git commands
-keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
-keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
-keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
-keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
-
--- restart lsp server
-keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
+-- <leader>rs restart lsp server

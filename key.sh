@@ -17,7 +17,7 @@ echo "5. Vim - Advanced"
 read -p "> " choice # prompt string
 
 if [[ $choice -eq 1 ]]; then 
-  cat $F/nvim-kb.md | $WINDOW
+  cat $F/nvim-kb.md | $WINDOW --fontname="mono 13"
 elif [[ $choice -eq 2 ]]; then
   cat $F/tmux-kb.md | $WINDOW
 elif [[ $choice -eq 3 ]]; then
