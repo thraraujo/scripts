@@ -122,7 +122,8 @@ Now, we would like to search and replace patterns.
 
 ```
 :s/old/new                  This is the search command. It changes the first occurrence. 
-:s/old/new/g                It changes all the occurrences.
+:s/old/new/g                It changes all the occurrences in the line
+:%s/old/new/g                It changes all the occurrences in the document
 :m,ns/old/new/g             It changes all the occurrences between lines m to n.
 ```
 
