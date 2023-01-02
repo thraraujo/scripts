@@ -47,3 +47,7 @@ x: delete single character without copying into register
  <leader>gs: list current changes per file with diff preview ["gs" for git status]
 
  <leader>rs: restart lsp server
+
+ csw " : surround the word with the symbol "
+ cs "  } : change the symbol " to }
+ ds "  : remove the symbol "
