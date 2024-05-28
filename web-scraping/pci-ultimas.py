@@ -1,29 +1,60 @@
 import requests
 from bs4 import BeautifulSoup
 
+
+# Ultimos resultados do PCI Concursos
 URL = "https://www.pciconcursos.com.br/ultimas/"
-
 page = requests.get(URL)
-
 soup = BeautifulSoup(page.content, "html.parser")
 
-# results = soup.find_all("div", class_="cd")
-# state = soup.find_all("div", class_="cc")
-results = soup.find_all("div", class_="ca")
+results = soup.find_all("div", class_="ca") # 1. link 2. Institution
 
-
-# entries = ["adjunto", "professor", "docente"]
 entries = ["universidade", "faculdade"]
+positions = ["fisica", "física", "matemática", "matematica"]
+
+total_positions = 0
+
+
+def anything_for_me(url) -> bool:
+    '''
+    Here I define a function that returns a boolean.
+    It visits the url and checks if there is a position in
+    physics or mathematics. 
+    '''
+    page_url = requests.get(f"{url}")
+    page_soup = BeautifulSoup(page_url.content, "html.parser")
+
+    page_text = page_soup.find_all("div", itemprop="articleBody") # Description of the job offer
+
+    for n in range(len(page_text)):
+
+        page_string = page_text[n].text.lower() # Here I collect all relevant texts of the job offer
+
+        something = any(keyword in page_string for keyword in positions)
+
+    return something
+    
+
 
 for j in range(len(results)):
-    string = results[j].text.lower()
 
-    test = [True for entry in entries if entry in string] 
+    string = results[j].text.lower() # Here I collect all relevant texts of the job offer
+    link = results[j].find('a').get('href')
 
-    if any(test):
-        print(30*"#")
+    # Here I check if any of the entries are in the strings
+    has_position = any(entry in string for entry in entries)
+    for_me = anything_for_me(link)
+
+    if has_position and for_me:
+
+        total_positions += 1
+        print(100*"#")
+        print(f" ")
         print(f"{results[j].text}")
+        print(link)
+        print(f" ")
 
 
-print("That\'s all folks")
-print(30*"#")
+print(100*"#")
+
+print(f"There are {total_positions} positions today.")
