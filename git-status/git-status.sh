@@ -4,6 +4,7 @@
 # These are my git repositories
 gitRepos=(
     $HOME/.config/dot-files/
+    $HOME/.config/scripts/
     $HOME/Sync/projects/aulas/
     $HOME/Sync/projects/cv-projects-documents/
     $HOME/Sync/projects/physics-math/
@@ -17,28 +18,15 @@ gitRepos=(
 
 echo "Here are the options you have:"
 echo "    1. See status."
+echo "    2. See Modified files."
 
 read -p ">> What option do you want? " CHOICE
-
 echo " "
 
+
+
 if [ $CHOICE -eq 1 ] ; then
-
-#echo "Option 1: Go to repo:"
-#for ((i=0; i<${#gitRepos[@]}; i++)); do
-#   echo " $i - ${gitRepos[i]}"
-#done
-#
-#echo " "
-#
-#read -p " What directory do you want? " DIR
-#
-#echo "${gitRepos[$DIR]}"
-#cd "${gitRepos[$DIR]}"
-#
-#else
-
-echo "Option 1: See modified repos"
+echo "Option 1: See modified repos."
 echo "--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---"
 for repo in "${gitRepos[@]}"
 do
@@ -46,3 +34,24 @@ do
 done
 echo "--- --- --- --- --- --- --- --- --- --- --- --- --- --- ---"
 fi
+
+
+
+if [ $CHOICE -eq 2 ] ; then
+echo "Option 2: See modified files in the repos."
+
+for ((i=0; i<${#gitRepos[@]}; i++))
+do
+   echo "    $i - ${gitRepos[i]}"
+done
+
+echo " "
+
+read -p " What directory do you want? " DIR
+
+cd "${gitRepos[$DIR]}"
+
+git status
+
+fi
+

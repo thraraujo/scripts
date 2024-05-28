@@ -1,0 +1,8 @@
+* *Scripts*
+
+Some useful scripts I use.
+
+1. Web scrapping for the PCI Concurso. 
+2. Git Status for my repositories
+3. Keybindings
+4. Students groups
