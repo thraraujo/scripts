@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 
-FILENAME=$(date +%F-%H-%M.org)
+FILENAME=$(date +%F.org)
 
 touch "./jobs/$FILENAME" 
 
-echo "File $FILENAME created"
+echo "File $FILENAME created at $(date)"
 
 echo "Searching for jobs..."
 
-python3 pci-ultimas.py > ./jobs/$FILENAME
+echo "*** $(date)" >> ./jobs/$FILENAME
+echo " " >> ./jobs/$FILENAME
+
+python3 pci-ultimas.py >> ./jobs/$FILENAME
+echo " " >> ./jobs/$FILENAME
 
 echo "added some jobs to $FILENAME."
-
-less ./jobs/$FILENAME

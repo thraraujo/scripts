@@ -48,13 +48,23 @@ for j in range(len(results)):
     if has_position and for_me:
 
         total_positions += 1
-        print(100*"#")
+        print(70*"#")
         print(f" ")
         print(f"{results[j].text}")
         print(link)
         print(f" ")
 
+print(70*"#")
 
-print(100*"#")
-
-print(f"There are {total_positions} positions today.")
+if total_positions == 0:
+    print(f" ")
+    print(f"No positions today =(")
+    print(f" ")
+elif total_positions == 1:
+    print(f" ")
+    print(f"There is just 1 position today")
+    print(f" ")
+else:
+    print(f" ")
+    print(f"There are {total_positions} positions today")
+    print(f" ")
