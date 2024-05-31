@@ -5,6 +5,6 @@ Some useful scripts I use.
 1. Web scrapping for the PCI Concurso
 2. Who is in my network?
 3. Git Status for my repositories
-5. Build pdf
+5. Build pdf with latex and lualatex
 5. Keybindings
 6. Students groups
