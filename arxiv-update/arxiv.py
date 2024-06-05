@@ -1,16 +1,14 @@
+#!/usr/bin/env python3
+
+from sys import argv 
 import requests
 import feedparser # atom parser
 
-url = 'https://rss.arxiv.org/atom/math-ph'
+url=f"https://rss.arxiv.org/atom/{argv[1]}"
+
 data = requests.get(url)
-
-xml_file = data.content
-
-file = feedparser.parse(xml_file)
-
-#print(file.entries)
+file = feedparser.parse(data.content)
 
 for link_file in file.entries:
-    print('>>', link_file.title)
-    print('   ', link_file.author,' : ', link_file.link)
-    print(' ')
+    print(link_file.link, '|', link_file.title,'|', link_file.author)
+       
