@@ -15,7 +15,7 @@ do
 
     python3 arxiv.py "$url" > $TEMP_FILE
 
-    grep -i 'vieira' $TEMP_FILE >> $OUTPUT_FILE
+    grep -i -e 'vieira' -e 'bogomolny' -e 'carrollian' $TEMP_FILE >> $OUTPUT_FILE
 
     rm "$TEMP_FILE"
 done
