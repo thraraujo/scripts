@@ -1,3 +1,2 @@
 integrab
 w-algebra
-spin chain
