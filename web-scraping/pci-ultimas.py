@@ -9,7 +9,7 @@ soup = BeautifulSoup(page.content, "html.parser")
 
 results = soup.find_all("div", class_="ca") # 1. link 2. Institution
 
-entries = ["universidade", "faculdade"]
+entries = ["universidade", "faculdade", "instituto"]
 positions = ["fisica", "física", "matemática", "matematica"]
 
 total_positions = 0
