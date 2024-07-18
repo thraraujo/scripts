@@ -5,13 +5,11 @@
 gitRepos=(
     $HOME/.config/dot-files/
     $HOME/.config/scripts/
-    $HOME/Sync/projects/aulas/
     $HOME/Sync/projects/cv-projects-documents/
     $HOME/Sync/projects/physics-math/
     $HOME/Sync/projects/wiki/
     $HOME/Sync/projects/work/research-reviews/
     $HOME/Sync/projects/work/q-bosons/
-    $HOME/Sync/projects/work/gauge-integrability/
     $HOME/Sync/projects/work/pySymmPol
 )
 
