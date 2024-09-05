@@ -8,3 +8,22 @@ Some useful scripts I use.
 5. Build pdf with latex and lualatex
 5. Keybindings
 6. Students groups
+
+* Install Linux Programs
+
+- Git 
+- Alacritty
+- Syncthing
+- Fastfetch
+- I3: Picom, Rofi, Polybar, Nitrogen, Rofi-themes
+- Emacs
+- Tmux, tmux theme
+- Nitrogen
+- Keepass
+- Starship
+- Texlive
+- Jupyter-Lab
+- Zathura, themes
+- Fonts: Fira, Hack, Symbols
+- Brightnessctl
+    
