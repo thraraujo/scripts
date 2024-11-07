@@ -2,7 +2,7 @@
 
 ARXIV=(hep-th math-ph nlin-ph cond-mat.stat-mech)
 
-BASE_DIR="/home/thiago/.config/scripts/arxiv-update/"
+BASE_DIR="/home/thiago/.config/scripts/03-arxiv-update/"
 FILENAME=$(date +%F)
 
 for url in "${ARXIV[@]}"
