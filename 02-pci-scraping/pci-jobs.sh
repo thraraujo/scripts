@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BASE_DIR="/home/thiago/.config/scripts/web-scraping/" 
+BASE_DIR="/home/thiago/.config/scripts/02-pci-scraping/" 
 FILENAME=$(date +%F.org)
 
 touch "$BASE_DIR/jobs/$FILENAME" 
