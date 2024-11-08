@@ -9,7 +9,7 @@ RESET='\033[0m' # Reset text color to default
 sudo nmap -sP 192.168.15.0/24 > /dev/null
 
 # Here I save the connected devices to this file for later manipulation
-arp > /home/thiago/.config/scripts/who-network/connected
+arp > /home/thiago/.config/scripts/04-who-network/connected
 
 # Here I have the mac address of the connected devices. 
 # awk 'NR > 1 {print $3}' connected  
