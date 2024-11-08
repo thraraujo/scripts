@@ -4,10 +4,8 @@ Some useful scripts I use.
 
 01. Git Status for my repositories
 02. Web scrapping for the PCI Concurso
+03. Arxiv update
 03. Who is in my network?
-04. Build pdf with latex and lualatex
-05. Keybindings
-06. Students groups
 
 * Install Linux Programs
 

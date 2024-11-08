@@ -28,5 +28,4 @@ for ((n=2; n <= LOOP_COUNT ; n++)) ; do
     fi 
 done
 
-
-# cat /home/thiago/.config/scripts/who-network/connected
+# cat /home/thiago/.config/scripts/04-who-network/connected
