@@ -4,6 +4,7 @@
 gitRepos=(
     $HOME/.config/dot-files/
     $HOME/.config/scripts/
+    $HOME/Sync/projects/thraraujo.github.io
     $HOME/Sync/projects/cv-projects-documents/
     $HOME/Sync/projects/physics-math/
     $HOME/Sync/projects/wiki/
