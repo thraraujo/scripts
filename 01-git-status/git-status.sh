@@ -4,17 +4,17 @@
 gitRepos=(
     $HOME/.config/dot-files/
     $HOME/.config/scripts/
-    $HOME/Sync/projects/thraraujo.github.io
-    $HOME/Sync/projects/cv-projects-documents/
-    $HOME/Sync/projects/physics-math/
-    $HOME/Sync/projects/wiki/
-    $HOME/Sync/projects/work/research-reviews/
-    $HOME/Sync/projects/work/pySymmPol/
-    $HOME/Sync/projects/work/2d-qft/
-    $HOME/Sync/projects/work/classical-integrablity/
-    $HOME/Sync/projects/work/fisica-geral/
-    $HOME/Sync/projects/work/gauge-integrability/
-    $HOME/Sync/projects/work/high-energy-physics/
+    $HOME/Sync/wiki/
+    $HOME/Sync/work/thraraujo.github.io
+    $HOME/Sync/work/cv-projects-documents/
+    $HOME/Sync/work/physics-math/
+    $HOME/Sync/work/drafts/research-reviews/
+    $HOME/Sync/work/drafts/pySymmPol/
+    $HOME/Sync/work/drafts/2d-qft/
+    $HOME/Sync/work/drafts/classical-integrablity/
+    $HOME/Sync/work/drafts/fisica-geral/
+    $HOME/Sync/work/drafts/gauge-integrability/
+    $HOME/Sync/work/drafts/high-energy-physics/
 )
 
 echo "--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---"
