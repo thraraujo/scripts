@@ -10,7 +10,6 @@ gitRepos=(
     $HOME/Sync/work/physics-math/
     $HOME/Sync/work/drafts/research-reviews/
     $HOME/Sync/work/drafts/pySymmPol/
-    $HOME/Sync/work/drafts/classical-integrablity/
     $HOME/Sync/work/drafts/fisica-geral/
     $HOME/Sync/work/drafts/high-energy-physics/
 )
