@@ -7,21 +7,3 @@ Some useful scripts I use.
 03. Arxiv update
 03. Who is in my network?
 
-* Install Linux Programs
-
-- Git 
-- Alacritty
-- Syncthing
-- Fastfetch
-- I3: Picom, Rofi, Polybar, Nitrogen, Rofi-themes
-- Emacs
-- Tmux, tmux theme
-- Nitrogen
-- Keepass
-- Starship
-- Texlive
-- Jupyter-Lab
-- Zathura, themes
-- Fonts: Fira, Hack, Symbols
-- Brightnessctl
-    

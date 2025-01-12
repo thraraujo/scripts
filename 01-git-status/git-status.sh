@@ -9,9 +9,8 @@ gitRepos=(
     $HOME/Sync/work/cv-projects-documents/
     $HOME/Sync/work/physics-math/
     $HOME/Sync/work/drafts/research-reviews/
-    $HOME/Sync/work/drafts/pySymmPol/
+    $HOME/Sync/work/pySymmPol/
     $HOME/Sync/work/drafts/fisica-geral/
-    $HOME/Sync/work/drafts/high-energy-physics/
 )
 
 echo "--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---"
