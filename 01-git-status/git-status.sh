@@ -11,6 +11,8 @@ gitRepos=(
     $HOME/Sync/work/drafts/research-notebooks/
     $HOME/Sync/work/pySymmPol/
     $HOME/Sync/work/drafts/fisica-geral/
+    $HOME/Sync/work/drafts/slavnov/
+    $HOME/Sync/work/drafts/vertex/
 )
 
 echo "--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---"
