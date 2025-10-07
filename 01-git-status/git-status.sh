@@ -7,7 +7,6 @@ gitRepos=(
     $HOME/Sync/wiki/
     $HOME/Sync/work/thraraujo.github.io
     $HOME/Sync/work/cv-projects-documents/
-    $HOME/Sync/work/physics-math/
     $HOME/Sync/work/drafts/research-notebooks/
     $HOME/Sync/work/pySymmPol/
     $HOME/Sync/work/drafts/fisica-geral/
