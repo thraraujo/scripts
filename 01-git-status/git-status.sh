@@ -5,12 +5,12 @@ gitRepos=(
     $HOME/.config/dot-files/
     $HOME/.config/scripts/
     $HOME/Documents/work/wiki/
-    $HOME/Documents/work/work/thraraujo.github.io
-    $HOME/Documents/work/work/cv-projects-documents/
-    $HOME/Documents/work/work/drafts/research-notebooks/
-    $HOME/Documents/work/work/pySymmPol/
-    $HOME/Documents/work/work/drafts/fisica-geral/
-    $HOME/Documents/work/work/drafts/slavnov/
+    $HOME/Documents/work/projects/thraraujo.github.io
+    $HOME/Documents/work/projects/cv-projects-documents/
+    $HOME/Documents/work/projects/drafts/research-notebooks/
+    $HOME/Documents/work/projects/pySymmPol/
+    $HOME/Documents/work/projects/drafts/fisica-geral/
+    $HOME/Documents/work/projects/drafts/slavnov/
 )
 
 echo "--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---"
