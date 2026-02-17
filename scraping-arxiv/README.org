@@ -8,5 +8,5 @@ set up a cron job to automate this process.
 - In ~authors.org~, we list the names of the authors.
 
 ** Preparation
-Create a directory named =papers= beforehand.
+Be careful with the output and log directories. 
 

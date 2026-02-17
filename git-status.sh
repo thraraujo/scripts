@@ -3,6 +3,7 @@
 # Git repositories
 gitRepos=(
     $HOME/.config/dot-files/
+    $HOME/.config/scripts/
     $HOME/Work-repos/wiki/
     $HOME/Work-repos/thraraujo.github.io
     $HOME/Work-repos/pysymmpol/
