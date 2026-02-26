@@ -1,8 +1,7 @@
 17\/Março\/2026|Wellington|Gomes Dantas|Física Estatística|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
 24\/Março\/2026|Alexandre|Schmidt|física teórica|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
-31\/Março\/2026|Gabriela|Coutinho de Carvalho|gravitação e cosmologia|TÍTULO|Prezada|a|Profa. Dra.|UERJ-Resende|RESUMO
+31\/Março\/2026|Greice|Kelly Bezerra da Costa Fontes|física da matéria condensada|TÍTULO|Prezada|a|Profa. Dra.|UFRRJ|RESUMO
 Dia\/Mes\/2026|Diego|Rossi Gratieri|física de neutrinos|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
-Dia\/Mes\/2026|Greice|Kelly Bezerra da Costa Fontes|Física|TÍTULO|Prezada|a|Profa. Dra.|UFRRJ|RESUMO
 Dia\/Mes\/2026|Nuno|Crokidakis|física|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
 Dia\/Mes\/2026|Pryscilla|Maria Pires dos Santos|Física|TÍTULO|Prezada|a|Profa. Dra.|UERJ-Resende|RESUMO
 Dia\/Mes\/2026|Obed|Alves Santos|Spintrônica|TÍTULO|Prezado|o|Prof. Dr.|CBPF|RESUMO
@@ -16,3 +15,4 @@ Dia\/Mes\/2026|Igor|Figueiredo Justo|Filosofia da Ciência|TÍTULO|Prezado|o|Pro
 Dia\/Mes\/2026|Vahid|Nikoofard|Filosofia da Ciência|TÍTULO|Prezado|o|Prof. Dr.|UERJ-Resende|RESUMO
 Dia\/Mes\/2026|Marcos|Cardoso Rodriguez|Física|TÍTULO|Prezado|o|Prof. Dr.|UFRRJ|RESUMO
 Dia\/Mes\/2026|Álvaro|Luis Martins de Almeida Nogueira|Física|TÍTULO|Prezado|o|Prof. Dr.|CEFET-RJ|RESUMO
++31\/Março\/2026|Gabriela|Coutinho de Carvalho|gravitação e cosmologia|TÍTULO|Prezada|a|Profa. Dra.|UERJ-Resende|RESUMO+

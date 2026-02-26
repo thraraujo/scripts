@@ -1,13 +1,13 @@
-{GREATINGS}, 
+Prezada Profa. Dra. Greice Kelly Bezerra da Costa Fontes, 
 
-Espero que este e-mail {PRONOUN} encontre bem.
+Espero que este e-mail a encontre bem.
 
 Meu nome é Thiago Araujo e sou docente do Departamento de Física da
 UFF em Volta Redonda. Atualmente, estou na organização do nosso ciclo
 de seminários e gostaria de te convidar para ministrar uma
 palestra presencial em nosso campus.
 
-Temos acompanhado suas contribuições na {RESEARCH} e
+Temos acompanhado suas contribuições na física da matéria condensada e
 acreditamos que seria uma oportunidade valiosa para nossa comunidade
 conhecer mais sobre os resultados da sua pesquisa.
 
@@ -23,7 +23,7 @@ em organizar um segundo momento ou uma reunião técnica em outro
 horário, voltada especificamente para esse fim.
 
 Detalhes:
-    - Data sugerida: {DAY} (Terça-Feira) (Nossos seminários ocorrem
+    - Data sugerida: 31/Março/2026 (Terça-Feira) (Nossos seminários ocorrem
       sempre às terças-feiras).
     - Horário: 16h15 às 17h15.
     - Local: Campus Aterrado, Volta Redonda/RJ.
