@@ -1,4 +1,4 @@
-17\/Março\/2026|Wellington|Gomes Dantas|Física Estatística|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
+17\/Março\/2026|Wellington|Gomes Dantas|Física Estatística|Centenário do Modelo de Ising: o homem e o modelo|Prezado|o|Prof. Dr.|UFF|Discutimos aspectos que nortearam a formulação do modelo de Ising e sua percepção pela comunidade científica, nos anos imediatamente seguintes à publicação de seu artigo. Juntamente dessa revisão, apresentamos uma pequena biografia de Ising, enfatizando sua experiência durante a II Guerra Mundial, emigração para os EUA e carreira como professor universitário no seu novo país.
 24\/Março\/2026|Alexandre|Schmidt|física teórica|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
 31\/Março\/2026|Greice|Kelly Bezerra da Costa Fontes|física da matéria condensada|TÍTULO|Prezada|a|Profa. Dra.|UFRRJ|RESUMO
 Dia\/Mes\/2026|Diego|Rossi Gratieri|física de neutrinos|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
@@ -16,3 +16,4 @@ Dia\/Mes\/2026|Vahid|Nikoofard|Filosofia da Ciência|TÍTULO|Prezado|o|Prof. Dr.
 Dia\/Mes\/2026|Marcos|Cardoso Rodriguez|Física|TÍTULO|Prezado|o|Prof. Dr.|UFRRJ|RESUMO
 Dia\/Mes\/2026|Álvaro|Luis Martins de Almeida Nogueira|Física|TÍTULO|Prezado|o|Prof. Dr.|CEFET-RJ|RESUMO
 +31\/Março\/2026|Gabriela|Coutinho de Carvalho|gravitação e cosmologia|TÍTULO|Prezada|a|Profa. Dra.|UERJ-Resende|RESUMO+
++31\/Março\/2026|Greice|Kelly Bezerra da Costa Fontes|física da matéria condensada|TÍTULO|Prezada|a|Profa. Dra.|UFRRJ|RESUMO+
