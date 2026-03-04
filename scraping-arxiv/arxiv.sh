@@ -2,7 +2,7 @@
 
 ARXIV=(hep-th math-ph nlin-ph cond-mat.stat-mech)
 
-BASE_DIR="/home/thiago/Work-repos/wiki/arxiv-papers/"
+BASE_DIR="/home/thiago/Work-repos/thraraujo.github.io/arxiv-papers/"
 FILENAME=$(date +%F)
 
 for url in "${ARXIV[@]}"
@@ -15,16 +15,16 @@ do
 
     /home/thiago/.config/scripts/scraping-arxiv/arxiv.py "$url" > $TEMP_FILE
 
-    LOOP_AUTHORS=$(wc -l /home/thiago/Work-repos/wiki/arxiv-papers/search-keys/authors.org | awk '{print $1}')
-    LOOP_FIELDS=$(wc -l /home/thiago/Work-repos/wiki/arxiv-papers/search-keys/fields.org | awk '{print $1}')
+    LOOP_AUTHORS=$(wc -l /home/thiago/Work-repos/thraraujo.github.io/arxiv-papers/search-keys/authors.org | awk '{print $1}')
+    LOOP_FIELDS=$(wc -l /home/thiago/Work-repos/thraraujo.github.io/arxiv-papers/search-keys/fields.org | awk '{print $1}')
 
     for ((n=1; n <= LOOP_AUTHORS ; n++)) ; do
-        author=$(awk "NR==$n {print \$1}" /home/thiago/Work-repos/wiki/arxiv-papers/search-keys/authors.org)
+        author=$(awk "NR==$n {print \$1}" /home/thiago/Work-repos/thraraujo.github.io/arxiv-papers/search-keys/authors.org)
         grep -i "$author" $TEMP_FILE >> $OUTPUT_FILE
     done
 
     for ((n=1; n <= LOOP_FIELDS ; n++)) ; do
-        field=$(awk "NR==$n {print \$1}" /home/thiago/Work-repos/wiki/arxiv-papers/search-keys/fields.org)
+        field=$(awk "NR==$n {print \$1}" /home/thiago/Work-repos/thraraujo.github.io/arxiv-papers/search-keys/fields.org)
         grep -i "$field" $TEMP_FILE >> $OUTPUT_FILE
     done
 
