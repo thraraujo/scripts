@@ -2,8 +2,8 @@
 24\/04\/2026|Mesa|Redonda|física|Mulheres na ciência|Prezado|o|Prof. Dr.|UFF|RESUMO
 31\/04\/2026|Rodrigo|Amorim|física|Mulheres na ciência|Prezado|o|Prof. Dr.|UFF|RESUMO
 14\/04\/2026|Pryscilla|Maria Pires dos Santos|Astronomia|TÍTULO|Prezada|a|Profa. Dra.|UERJ-Resende|RESUMO
-21\/04\/2026|Diego|Rossi Gratieri|física de neutrinos|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
-28\/Março\/2026|Alexandre|Schmidt|física teórica|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
+28\/04\/2026|Diego|Rossi Gratieri|física de neutrinos|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
+xx\/Abril\/2026|Alexandre|Schmidt|física teórica|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
 12\/05\/2026|Nuno|Crokidakis|física|TÍTULO|Prezado|o|Prof. Dr.|UFF|RESUMO
 Dia\/Mes\/2026|Clifford|Neves|Física|TÍTULO|Prezado|o|Prof. Dr.|CEFET-RJ|RESUMO
 Dia\/Mes\/2026|Obed|Alves Santos|Spintrônica|TÍTULO|Prezado|o|Prof. Dr.|CBPF|RESUMO
