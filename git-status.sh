@@ -10,6 +10,7 @@ gitRepos=(
     $HOME/Work-repos/cv-projects-documents/
     $HOME/Work-repos/papers/research-notebooks/
     $HOME/Work-repos/papers/slavnov/
+    $HOME/Work-repos/papers/fermion-boson/
 )
 
 echo "--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---"
