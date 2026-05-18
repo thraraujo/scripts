@@ -1,0 +1,23 @@
+Assunto: Seminário de Física VFI: (Rinaldo Wander Montalvão, Gain Therapeutics)
+
+Prezada comunidade acadêmica,
+
+No seminário desta semana, teremos a honra de receber o Prof. Dr. Rinaldo Wander Montalvão (Gain Therapeutics), que apresentará uma palestra voltada especialmente para nosso corpo discente e colegas do instituto.
+
+Título: IA na Física: Da Descoberta Científica aos Laboratórios Inteligentes
+Resumo: A Inteligência Artificial está transformando profundamente a maneira como a ciência é feita. Na física, técnicas de IA e Machine Learning vêm sendo aplicadas em problemas que vão desde a análise de enormes volumes de dados experimentais até a aceleração de simulações científicas complexas e a descoberta de novos materiais. Nesta palestra, serão apresentados os principais conceitos de IA utilizados atualmente em pesquisa científica, bem como aplicações em áreas como física de partículas, astrofísica, cosmologia, física computacional e ciência de materiais. Também serão discutidos temas emergentes, como redes neurais informadas por física (Physics-Informed Neural Networks), modelos generativos científicos e o papel da IA na descoberta de novas leis e padrões físicos. Além das oportunidades, a palestra abordará desafios importantes relacionados à interpretabilidade, confiabilidade e impacto da IA na formação do cientista do futuro. A apresentação é voltada para estudantes de graduação, pós-graduação e professores interessados em compreender como a integração entre física, matemática e inteligência artificial está redefinindo as fronteiras da pesquisa científica contemporânea.
+
+Informações do Evento:
+- Data: 19/05/2026
+- Horário do Seminário: 16h15 às 17h15
+- Coffee Break: 16h00 (Um momento para integração e conversa)
+- Local: Sala 302C (Auditório do Bloco C, 3º andar) — Campus Aterrado
+
+Este seminário foi organizado com foco especial na formação de estudantes da graduação, sendo uma excelente oportunidade para conhecer temas contemporâneos da Física de forma acessível e direta.
+
+Contamos com a presença de todas as pessoas!
+
+Atenciosamente,
+
+Thiago Araujo
+Coordenação de Seminários — VFI/UFF
