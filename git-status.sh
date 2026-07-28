@@ -6,12 +6,11 @@ gitRepos=(
     $HOME/.config/scripts/
     $HOME/Work-repos/wiki/
     $HOME/Work-repos/open-research-library/
-    $HOME/Work-repos/papers/fermion-boson/
     $HOME/Work-repos/thraraujo.github.io
     $HOME/Work-repos/pysymmpol/
     $HOME/Work-repos/cv-projects-documents/
-    $HOME/Work-repos/papers/research-notebooks/
-    $HOME/Work-repos/papers/slavnov/
+    $HOME/Work-repos/writing/
+    $HOME/Work-repos/slavnov/
 )
 
 echo "--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---"
