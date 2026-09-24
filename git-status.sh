@@ -10,8 +10,8 @@ gitRepos=(
     $HOME/Work-repos/pysymmpol/
     $HOME/Work-repos/cv-projects-documents/
     $HOME/Work-repos/writing/
-    $HOME/Work-repos/topological-vertex/
-    $HOME/Work-repos/slavnov/
+    $HOME/Work-repos/portfolio/topological-vertex/
+    $HOME/Work-repos/portfolio/slavnov/
 )
 
 echo "--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---"
