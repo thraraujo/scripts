@@ -12,6 +12,7 @@ gitRepos=(
     $HOME/Work-repos/writing/
     $HOME/Work-repos/portfolio/topological-vertex/
     $HOME/Work-repos/portfolio/slavnov/
+    $HOME/Work-repos/portfolio/cosmology/
 )
 
 echo "--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---"
